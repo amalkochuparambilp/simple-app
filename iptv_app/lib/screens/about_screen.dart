@@ -94,11 +94,7 @@ class AboutScreen extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           _buildInfoRow('Version', '1.0.0'),
-          _buildInfoRow('Build', '1'),
-          _buildInfoRow('Platform', 'Android'),
-          _buildInfoRow('Flutter', '3.47.7'),
-          _buildInfoRow('API', '35 (Android 11+)'),
-        ],
+         ],
       ),
     );
   }
@@ -222,7 +218,7 @@ class AboutScreen extends StatelessWidget {
             ),
             child: Row(
               children: [
-                const Icon(Icons.person, color: Color(0xFFE50914), size: 20),
+                const Icon(Icons.person, color: Color(0xFFE50914), size: 20 ),
                 const SizedBox(width: 12),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -253,10 +249,10 @@ class AboutScreen extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildSocialButton('GitHub', Icons.code, () => _openUrl('https://github.com/devzoftofficial')),
+        _buildSocialButton('GitHub', Icons.code, () => _openUrl('https://github.com/devzoft')),
         _buildSocialButton('Telegram', Icons.telegram, () => _openUrl('https://t.me/devzoftofficial')),
-        _buildSocialButton('LinkedIn', Icons.link, () => _openUrl('https://linkedin.com/in/devzoftofficial')),
-        _buildSocialButton('Twitter', Icons.alternate_email, () => _openUrl('https://twitter.com/devzoftofficial')),
+        _buildSocialButton('LinkedIn', Icons.link, () => _openUrl('https://linkedin.com/in')),
+        _buildSocialButton('Twitter', Icons.alternate_email, () => _openUrl('https://x.com')),
       ],
     );
   }

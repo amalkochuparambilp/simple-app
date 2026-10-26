@@ -150,7 +150,6 @@ class _ServerStatusScreenState extends State<ServerStatusScreen> {
                       const SizedBox(width: 12),
                       _buildStatusInfo(Icons.upload_file, 'Bitrate: ${server['bitrate']}'),
                       const SizedBox(width: 12),
-                      _buildStatusInfo(Icons.timeline, 'Uptime: ${server['uptime']}'),
                     ],
                   ),
                   const SizedBox(height: 12),
@@ -200,7 +199,6 @@ class _ServerStatusScreenState extends State<ServerStatusScreen> {
         _servers[3]['status'] = 'online';
         _servers[3]['latency'] = 150;
         _servers[3]['bitrate'] = '2.0 Mbps';
-        _servers[3]['uptime'] = '99.8%';
       });
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
